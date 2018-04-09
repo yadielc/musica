@@ -10,6 +10,7 @@ import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { SocialSharing } from "@ionic-native/social-sharing";
 import { MusicProvider } from '../providers/music/music';
 
 import 'rxjs/add/operator/map';
@@ -34,6 +35,7 @@ import 'rxjs/Rx';
     ListPage
   ],
   providers: [
+    SocialSharing,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
