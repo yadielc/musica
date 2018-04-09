@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, LoadingController } from 'ionic-angular';
 import { MusicProvider } from '../../providers/music/music';
 
 import 'rxjs/add/operator/map';
@@ -14,13 +14,20 @@ export class HomePage {
 
   public allMusic = [];
 
-  constructor(public navCtrl: NavController, private musicProvider: MusicProvider) {
+  constructor(private loadingController: LoadingController, public navCtrl: NavController, private musicProvider: MusicProvider) {
 
   }
 
   ionViewDidLoad () {
-   this.musicProvider.getMusic().subscribe((musicList) => {
+    let allMusicLoadingController = this.loadingController.create({
 
+    content: "Getting Your Music from Server"
+
+    });
+    allMusicLoadingController.present();
+
+   this.musicProvider.getMusic().subscribe((musicList) => {
+     allMusicLoadingController.dismiss(); 
      this.allMusic = musicList;
 
    // .subscribe((data: IUsers[]) =>
