@@ -7,6 +7,8 @@ import { SocialSharing} from "@ionic-native/social-sharing";
 import 'rxjs/add/operator/map';
 import 'rxjs/Rx';
 
+import {MusicPlayerPage} from "../music-player/music-player";
+
 
 @Component({
   selector: 'page-home',
@@ -14,7 +16,7 @@ import 'rxjs/Rx';
 })
 export class HomePage {
 
-  public allMusic = [];
+  public allMusic = [1];
 
   constructor(private socialSharing: SocialSharing, private actionSheetController: ActionSheetController, private loadingController: LoadingController, public navCtrl: NavController, private musicProvider: MusicProvider) {
 
@@ -76,15 +78,21 @@ export class HomePage {
           {
             text:"Cancel",
             role: "destructive"
-
-
-
           }
                 ]
 
           });
 
        shareSongActionSheet.present();
+
+
+   }
+
+   goToMusicPlayer(music) {
+     this.navCtrl.push(MusicPlayerPage, {
+     music: music
+
+     });
 
 
    }

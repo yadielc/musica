@@ -8,6 +8,8 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 
+import {MusicPlayerPage} from "../pages/music-player/music-player";
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { SocialSharing } from "@ionic-native/social-sharing";
@@ -21,7 +23,8 @@ import 'rxjs/Rx';
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    MusicPlayerPage
   ],
   imports: [
     HttpClientModule,
@@ -32,7 +35,8 @@ import 'rxjs/Rx';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    MusicPlayerPage
   ],
   providers: [
     SocialSharing,
