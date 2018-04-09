@@ -30,4 +30,9 @@ export class MusicProvider {
 
   }
 
+  getOneSong (){
+    let oneSongURL = API + "/qty/1"
+     return this.http.get(oneSongURL); 
+  }
+
 }

@@ -27,7 +27,7 @@ export class HomePage {
     allMusicLoadingController.present();
 
    this.musicProvider.getMusic().subscribe((musicList) => {
-     allMusicLoadingController.dismiss(); 
+     allMusicLoadingController.dismiss();
      this.allMusic = musicList;
 
    // .subscribe((data: IUsers[]) =>
@@ -35,4 +35,12 @@ export class HomePage {
 
 }
 
+  /* addOneSong(refresher){
+     this.musicProvider.getOneSong()
+     .subscribe((oneSong) => {
+       this.allMusic.unshift(oneSong[0]);
+       refresher.complete();
+        });
+   }
+   */
 }
