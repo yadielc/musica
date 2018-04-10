@@ -17,4 +17,4 @@ Here's some screenshots of the application and it's functionalities:
 
 <img width="500" alt="screen shot 2018-04-09 at 2 53 16 pm" src="https://user-images.githubusercontent.com/33431535/38532181-99e0461e-3c41-11e8-8be3-ced127be1d79.png">
 
-<img width="353" alt="screen shot 2018-04-09 at 2 53 41 pm" src="https://user-images.githubusercontent.com/33431535/38532255-f4fff760-3c41-11e8-8307-609769e07f0d.png">
+<img width="200" alt="screen shot 2018-04-09 at 2 53 41 pm" src="https://user-images.githubusercontent.com/33431535/38532255-f4fff760-3c41-11e8-8307-609769e07f0d.png">
