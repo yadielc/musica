@@ -15,6 +15,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { SocialSharing } from "@ionic-native/social-sharing";
 import { MusicProvider } from '../providers/music/music';
 
+import {MediaPlugin} from "@ionic-native/media";
+
 import 'rxjs/add/operator/map';
 
 import 'rxjs/Rx';
@@ -39,6 +41,7 @@ import 'rxjs/Rx';
     MusicPlayerPage
   ],
   providers: [
+    MediaPlugin,
     SocialSharing,
     StatusBar,
     SplashScreen,
