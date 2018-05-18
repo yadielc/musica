@@ -1,7 +1,7 @@
 Musica Mobile Application by Yadiel Cabrera
 ==========
 
-This my version of the musica mobile application.
+This my version of the musica mobile cross-platform application. This application works on the Android, iOS and Windows phone operating systems. 
 This is a project part of the "Ionic 3.0 for Mobile Developers" course on Lynda.com, Sani Yusuf,
 the instructor.
 
